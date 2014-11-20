@@ -8,18 +8,36 @@ jquery.ngAnimate has approximately the same functionality with ngAnimate
 ***
 UnLike ngAnimate it don't automatically enable angularAnimation.css effects. Because, it is possible that, if it enabled automatically It will effect some of other plugins in your project and couse performance problems. For this reason, you should indicate that, if enable animation or not.
 It doesn't have any new method or required new learning. Just sets of overwritten some common existing jquery methods.
-You can enable animations by using below method, with enable animation true: 
 
-.show(true), .hide(true), .toggle(true) If you don't set true argument, animation would not be enabled. 
+<p class="help-block">
+                        You can enable animations by using below method, with enable animation <span style="color:blue">true</span>:
+                        <br><br>
+                        <code><span class="pln">.show(true)</span></code>,
+                        <code><span class="pln">.hide(true)</span></code>,
+                        <code><span class="pln">.toggle(true)</span></code>
+                        If you don't set true argument, animation would not be enabled.
+                        <br><br>
+                        <code><span class="pln">.addClass('yourClassName', true)</span></code>,
+                        <code><span class="pln">.removeClass('yourClassName', true)</span></code>,
+                        <code><span class="pln">.toggleClass('yourClassName', true)</span></code>
+                        If you don't add true argument, animation would not be enabled.
+                        <br><br>
+                        <code><span class="pln">.appendTo(container, true)</span></code>
+                        <code><span class="pln">.prependTo(container, true)</span></code>
+                        <code><span class="pln">.insertBefore(element, true)</span></code>
+                        <code><span class="pln">.insertAfter(element, true)</span></code>
+                        If you don't add true argument, animation would not be enabled.
 
-.addClass('yourClassName', true), .removeClass('yourClassName', true), .toggleClass('yourClassName', true) If you don't add true argument, animation would not be enabled. 
-
-.appendTo(container, true) .prependTo(container, true) .insertBefore(element, true) .insertAfter(element, true) If you don't add true argument, animation would not be enabled. and .detach(true) If you don't add true argument, animation would not be enabled. 
-Namely, when one of above method called, jquery.ngAnimate look at the element has animation css class or not. If true, it enables the animation. that is all.
+                        and <code><span class="pln">.detach(true)</span></code>
+                        If you don't add true argument, animation would not be enabled.
+                        <br>
+                        Namely, when one of above method called,
+                        <code>jquery.ngAnimate</code> look at the element has animation css class or not. If true, it enables the animation. that is all.
+                    </p>
 
 How animations enabled within angularAnimation.css
 It is very simple. If an element is shown or hidden via jquery method, it gets proper classes for catching its animation css. Also the same logic is valid for all listed methods. For examples;
-show || hide || toggle Methods
+<h5><code>show</code> || <code>hide</code> || <code>toggle</code> Methods</h5>
 
 If element was already hidden, cannot be hidden again, Also it was shown, cannot be shown again.
 
