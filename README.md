@@ -6,6 +6,11 @@ enable css animaion with jquery automatically. inspired by angular animate
 Like ngAnimate which module of angular.js we developed native jquery plugin named jquery.ngAnimate.
 jquery.ngAnimate has approximately the same functionality with ngAnimate
 ***
+<a href="https://github.com/pedersoft/bootstrap-animate-with-css">
+There is bootstrap component set use <code>jquery.ngAnimate</code>
+</a>
+
+
 UnLike ngAnimate it don't automatically enable angularAnimation.css effects. Because, it is possible that, if it enabled automatically It will effect some of other plugins in your project and couse performance problems. For this reason, you should indicate that, if enable animation or not.
 It doesn't have any new method or required new learning. Just sets of overwritten some common existing jquery methods.
 
